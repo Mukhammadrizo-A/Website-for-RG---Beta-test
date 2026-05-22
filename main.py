@@ -294,14 +294,6 @@ if password == st.secrets["password"]:
             \n\nКак вы думаете, это очередная попытка дать пустые надежды или она реально сможет навести порядок? Пишите своё мнение в комментариях!
             """)
 
-        col3, col4 = st.columns([0.8, 0.2])
-        with col3:
-            with st.expander(" 2.3 Не скачивайте картинки из уже опубликованных постов: многократное перезаливание портит качество изображения."):
-                st.write("Используйте шаблоны и формы из специальной группы.")
-
-        with col4:
-            st.link_button("Группа", "https://vk.com/club229790969")
-
         with st.expander(" 2.4 Баллы с таблицы Редакторов вы сможете выводить в админскую таблицу"):
             st.write("Для вывода просто скажите об этом Главному Редактору")
 
@@ -369,18 +361,18 @@ if password == st.secrets["password"]:
         with st.expander("Шаблон для анекдота"):
             st.code(post3, language='text')
 
-            with st.expander("Шаблон для цитаты"):
-                st.code(post4, language='text')
+        with st.expander("Шаблон для цитаты"):
+            st.code(post4, language='text')
 
-            with st.expander("Шаблон для песни"):
-                st.code(post5, language='text')
+        with st.expander("Шаблон для песни"):
+            st.code(post5, language='text')
 
-            with st.expander("Шаблон для новостей"):
-                st.image(img2, use_container_width=True)
+        with st.expander("Шаблон для новостей"):
+            st.image(img2, use_container_width=True)
 
-                col5, col6, col7 = st.columns((1, 2, 1))
+            col5, col6, col7 = st.columns((1, 2, 1))
 
-                try:
+            try:
                     with open(img2, "rb") as file:
                         local_bytes = file.read()
 
@@ -393,18 +385,18 @@ if password == st.secrets["password"]:
                             use_container_width=True,
                             key="download_2"
                         )
-                except FileNotFoundError:
+            except FileNotFoundError:
                     st.error(f"Файл {img2} не найден в папке с проектом!")
 
-                st.markdown("---")
-                st.code(post6, language='text')
+            st.markdown("---")
+            st.code(post6, language='text')
 
-            with st.expander("Шаблон для опрос"):
-                st.image(img3, use_container_width=True)
+        with st.expander("Шаблон для опрос"):
+            st.image(img3, use_container_width=True)
 
-                col5, col6, col7 = st.columns((1, 2, 1))
+            col5, col6, col7 = st.columns((1, 2, 1))
 
-                try:
+            try:
                     with open(img3, "rb") as file:
                         local_bytes = file.read()
 
@@ -417,21 +409,21 @@ if password == st.secrets["password"]:
                             use_container_width=True,
                             key="download_3"
                         )
-                except FileNotFoundError:
+            except FileNotFoundError:
                     st.error(f"Файл {img3} не найден в папке с проектом!")
 
-                st.markdown("---")
-                st.code(post7, language='text')
+            st.markdown("---")
+            st.code(post7, language='text')
 
-            with st.expander("Шаблон для мемов"):
-                st.code(post8, language='text')
+        with st.expander("Шаблон для мемов"):
+            st.code(post8, language='text')
 
-            with st.expander("Шаблон для игры"):
-                st.image(img1, use_container_width=True)
+        with st.expander("Шаблон для игры"):
+            st.image(img1, use_container_width=True)
 
-                col5, col6, col7 = st.columns((1, 2, 1))
+            col5, col6, col7 = st.columns((1, 2, 1))
 
-                try:
+            try:
                     with open(img1, "rb") as file:
                         local_bytes = file.read()
 
@@ -444,11 +436,11 @@ if password == st.secrets["password"]:
                             use_container_width=True,
                             key="download_4"
                         )
-                except FileNotFoundError:
-                    st.error(f"Файл {img1} не найден в папке с проектом!")
+            except FileNotFoundError:
+                st.error(f"Файл {img1} не найден в папке с проектом!")
 
-                st.markdown("---")
-                st.code(post9, language='text')
+            st.markdown("---")
+            st.code(post9, language='text')
 
             with st.expander("Шаблон для будни"):
                 st.code(post10, language='text')
