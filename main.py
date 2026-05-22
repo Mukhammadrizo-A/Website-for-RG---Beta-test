@@ -442,13 +442,13 @@ if password == st.secrets["password"]:
             st.markdown("---")
             st.code(post9, language='text')
 
-            with st.expander("Шаблон для будни"):
+        with st.expander("Шаблон для будни"):
                 st.code(post10, language='text')
 
-            with st.expander("Шаблон для пасхалка"):
+        with st.expander("Шаблон для пасхалка"):
                 st.code(post11, language='text')
 
-            with st.expander("Шаблон для фактов"):
+        with st.expander("Шаблон для фактов"):
                 st.code(post12, language='text')
 
     elif menu2 == "5 - Почётные редакторы":
