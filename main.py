@@ -455,7 +455,7 @@ if password == st.secrets["password"]:
         st.subheader("Список редакторов, награждённых орденами I, II и III степени.")
 
         st.set_page_config(layout="wide")
-        st.title("Список мастеров, чей вклад отмечен Орденом редактора")
+        st.title("Главные лица редакции и их заслуженные награды")
 
         st.markdown("""
             <style>
